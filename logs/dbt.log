@@ -6155,3 +6155,728 @@ FROM flattened_payload;
 [0m17:02:56.276224 [debug] [MainThread]: Command `dbt run` succeeded at 17:02:56.276224 after 9.10 seconds
 [0m17:02:56.276224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299B678A240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299CAA3FA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299B6F31160>]}
 [0m17:02:56.276224 [debug] [MainThread]: Flushing usage events
+[0m17:49:15.138077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E5113F260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E5113F830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E5113EC90>]}
+
+
+============================== 17:49:15.155647 | c89cf8b5-cb97-4295-a3ba-03932ebce738 ==============================
+[0m17:49:15.155647 [info ] [MainThread]: Running with dbt=1.8.6
+[0m17:49:15.156489 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\SAILS-DM204\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --full-refresh', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:49:15.156489 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\SAILS-DM204\OneDrive - Sails Software Solutions Pvt Ltd\Desktop\Dummy Folder\buy_box_gcp_1\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:49:15.156489 [debug] [MainThread]: Command `dbt run` failed at 17:49:15.156489 after 0.19 seconds
+[0m17:49:15.156489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E518A85C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E517AF4A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020E5113F830>]}
+[0m17:49:15.156489 [debug] [MainThread]: Flushing usage events
+[0m17:51:18.087117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E67C37D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E6A2769C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E6A86DAC0>]}
+
+
+============================== 17:51:18.087117 | bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818 ==============================
+[0m17:51:18.087117 [info ] [MainThread]: Running with dbt=1.8.6
+[0m17:51:18.087117 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\SAILS-DM204\\OneDrive - Sails Software Solutions Pvt Ltd\\Desktop\\Dummy Folder\\buy_box_gcp_1\\logs', 'profiles_dir': 'C:\\Users\\SAILS-DM204\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --full-refresh', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:51:19.577139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7DEF6E40>]}
+[0m17:51:19.651603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7D7F7530>]}
+[0m17:51:19.651603 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m17:51:19.656261 [debug] [MainThread]: checksum: 2f2fb10c73cafe3e79aa104295a8244291492b32b5598ce46af770f7d0bd5194, vars: {}, profile: , target: , version: 1.8.6
+[0m17:51:19.724321 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m17:51:19.727828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7E2FD670>]}
+[0m17:51:20.632536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7E4B5430>]}
+[0m17:51:20.695730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7E4A9DF0>]}
+[0m17:51:20.695730 [info ] [MainThread]: Found 11 models, 478 macros
+[0m17:51:20.697268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7E4AF170>]}
+[0m17:51:20.699377 [info ] [MainThread]: 
+[0m17:51:20.700163 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:51:20.703707 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-437212'
+[0m17:51:20.703707 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:51:21.967867 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-437212_wellbefore'
+[0m17:51:21.968921 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:51:23.389878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7E0B4710>]}
+[0m17:51:23.389878 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:51:23.389878 [info ] [MainThread]: 
+[0m17:51:23.389878 [debug] [Thread-1 (]: Began running node model.buy_box_gcp_1.dim_all_columns
+[0m17:51:23.389878 [info ] [Thread-1 (]: 1 of 11 START sql view model wellbefore.dim_all_columns ........................ [RUN]
+[0m17:51:23.404884 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.buy_box_gcp_1.dim_all_columns'
+[0m17:51:23.406018 [debug] [Thread-1 (]: Began compiling node model.buy_box_gcp_1.dim_all_columns
+[0m17:51:23.409845 [debug] [Thread-1 (]: Writing injected SQL for node "model.buy_box_gcp_1.dim_all_columns"
+[0m17:51:23.409845 [debug] [Thread-1 (]: Began executing node model.buy_box_gcp_1.dim_all_columns
+[0m17:51:23.445516 [debug] [Thread-1 (]: Writing runtime sql for node "model.buy_box_gcp_1.dim_all_columns"
+[0m17:51:23.445516 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:51:23.478120 [debug] [Thread-1 (]: On model.buy_box_gcp_1.dim_all_columns: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "buy_box_gcp_1", "target_name": "dev", "node_id": "model.buy_box_gcp_1.dim_all_columns"} */
+
+
+  create or replace view `dbt-437212`.`wellbefore`.`dim_all_columns`
+  OPTIONS()
+  as WITH source_data AS (
+    SELECT
+        JSON_EXTRACT(MESSAGE_BODY, "$") AS raw_data
+    FROM
+        dbt-437212.wellbefore.BuyBox_raw_ds_first20_entries
+),
+
+flatten_payload AS (
+    SELECT
+        JSON_EXTRACT_SCALAR(raw_data, "$.EventTime") AS EventTime,
+        JSON_EXTRACT_SCALAR(raw_data, "$.NotificationMetadata.ApplicationId") AS ApplicationId,
+        JSON_EXTRACT_SCALAR(raw_data, "$.NotificationMetadata.NotificationId") AS NotificationId,
+        TIMESTAMP(JSON_EXTRACT_SCALAR(raw_data, "$.NotificationMetadata.PublishTime")) AS PublishTime,
+        JSON_EXTRACT_SCALAR(raw_data, "$.NotificationMetadata.SubscriptionId") AS SubscriptionId,
+        JSON_EXTRACT_SCALAR(raw_data, "$.NotificationType") AS NotificationType,
+        JSON_EXTRACT_SCALAR(raw_data, "$.NotificationVersion") AS NotificationVersion,
+        JSON_EXTRACT_SCALAR(raw_data, "$.Payload.AnyOfferChangedNotification.OfferChangeTrigger.ASIN") AS ASIN,
+        JSON_EXTRACT_SCALAR(raw_data, "$.Payload.AnyOfferChangedNotification.OfferChangeTrigger.ItemCondition") AS ItemCondition,
+        JSON_EXTRACT_SCALAR(raw_data, "$.Payload.AnyOfferChangedNotification.OfferChangeTrigger.MarketplaceId") AS MarketplaceId,
+        JSON_EXTRACT_SCALAR(raw_data, "$.Payload.AnyOfferChangedNotification.OfferChangeTrigger.OfferChangeType") AS OfferChangeType,
+        JSON_EXTRACT_SCALAR(raw_data, "$.Payload.AnyOfferChangedNotification.OfferChangeTrigger.TimeOfOfferChange") AS TimeOfOfferChange,
+        JSON_EXTRACT_ARRAY(raw_data, "$.Payload.AnyOfferChangedNotification.Offers") AS offers,
+        JSON_EXTRACT_ARRAY(raw_data, "$.Payload.AnyOfferChangedNotification.Summary.BuyBoxPrices") AS bbp,
+        JSON_EXTRACT_ARRAY(raw_data, "$.Payload.AnyOfferChangedNotification.Summary.LowestPrices") AS lop,
+        JSON_EXTRACT_ARRAY(raw_data, "$.Payload.AnyOfferChangedNotification.Summary.NumberOfBuyBoxEligibleOffers") AS neo,
+        JSON_EXTRACT_ARRAY(raw_data, "$.Payload.AnyOfferChangedNotification.Summary.NumberOfOffers") AS noo,
+        JSON_EXTRACT(raw_data, "$.Payload.AnyOfferChangedNotification.Summary.ListPrice") AS lp,  -- Access the entire ListPrice object
+        JSON_EXTRACT_ARRAY(raw_data, "$.Payload.AnyOfferChangedNotification.Summary.SalesRankings") AS sr
+    FROM
+        source_data
+),
+
+flattened_payload AS (
+    SELECT
+        EventTime,
+        ApplicationId,
+        NotificationId,
+        PublishTime,
+        SubscriptionId,
+        NotificationType,
+        NotificationVersion,
+        ASIN,
+        ItemCondition,
+        MarketplaceId,
+        OfferChangeType,
+        TimeOfOfferChange,
+
+        CAST(JSON_EXTRACT_SCALAR(offer, "$.IsBuyBoxWinner") AS BOOLEAN) AS IsBuyBoxWinner,
+        CAST(JSON_EXTRACT_SCALAR(offer, "$.IsFeaturedMerchant") AS BOOLEAN) AS IsFeaturedMerchant,
+        CAST(JSON_EXTRACT_SCALAR(offer, "$.IsFulfilledByAmazon") AS BOOLEAN) AS IsFulfilledByAmazon,
+        CAST(JSON_EXTRACT_SCALAR(offer, "$.ListingPrice.Amount") AS FLOAT64) AS ListingPriceAmount,
+        JSON_EXTRACT_SCALAR(offer, "$.ListingPrice.CurrencyCode") AS ListingPriceCurrencyCode,
+        CAST(JSON_EXTRACT_SCALAR(offer, "$.PrimeInformation.IsOfferNationalPrime") AS BOOLEAN) AS IsOfferNationalPrime,
+        CAST(JSON_EXTRACT_SCALAR(offer, "$.PrimeInformation.IsOfferPrime") AS BOOLEAN) AS IsOfferPrime,
+        JSON_EXTRACT_SCALAR(offer, "$.SellerId") AS SellerId,
+        CAST(JSON_EXTRACT_SCALAR(offer, "$.SellerFeedbackRating.FeedbackCount") AS INT64) AS SellerFeedbackCount,
+        CAST(JSON_EXTRACT_SCALAR(offer, "$.SellerFeedbackRating.SellerPositiveFeedbackRating") AS INT64) AS SellerPositiveFeedbackRating,
+        CAST(JSON_EXTRACT_SCALAR(offer, "$.Shipping.Amount") AS FLOAT64) AS ShippingAmount,
+        JSON_EXTRACT_SCALAR(offer, "$.Shipping.CurrencyCode") AS ShippingCurrencyCode,
+        JSON_EXTRACT_SCALAR(offer, "$.ShippingTime.AvailabilityType") AS ShippingAvailabilityType,
+        CAST(JSON_EXTRACT_SCALAR(offer, "$.ShippingTime.MaximumHours") AS INT64) AS ShippingMaxHours,
+        CAST(JSON_EXTRACT_SCALAR(offer, "$.ShippingTime.MinimumHours") AS INT64) AS ShippingMinHours,
+        CAST(JSON_EXTRACT_SCALAR(offer, "$.ShipsDomestically") AS BOOLEAN) AS ShipsDomestically,
+        JSON_EXTRACT_SCALAR(offer, "$.ShipsFrom.Country") AS ShipsFromCountry,
+        JSON_EXTRACT_SCALAR(offer, "$.ShipsFrom.State") AS ShipsFromState,
+        JSON_EXTRACT_SCALAR(offer, "$.SubCondition") AS SubCondition,
+
+        JSON_EXTRACT_SCALAR(bbp, "$.Condition") AS BuyBoxPricesCondition,
+        CAST(JSON_EXTRACT_SCALAR(bbp, "$.LandedPrice.Amount") AS FLOAT64) AS BuyBoxLandedPriceAmount,
+        JSON_EXTRACT_SCALAR(bbp, "$.LandedPrice.CurrencyCode") AS BuyBoxLandedPriceCurrencyCode,
+        CAST(JSON_EXTRACT_SCALAR(bbp, "$.ListingPrice.Amount") AS FLOAT64) AS BuyBoxListingPriceAmount,
+        JSON_EXTRACT_SCALAR(bbp, "$.ListingPrice.CurrencyCode") AS BuyBoxListingPriceCurrencyCode,
+        CAST(JSON_EXTRACT_SCALAR(bbp, "$.Shipping.Amount") AS FLOAT64) AS BuyBoxShippingAmount,
+        JSON_EXTRACT_SCALAR(bbp, "$.Shipping.CurrencyCode") AS BuyBoxShippingCurrencyCode,
+
+        JSON_EXTRACT_SCALAR(lop, "$.Condition") AS LowestPricesCondition,
+        JSON_EXTRACT_SCALAR(lop, "$.FulfillmentChannel") AS LowestPricesFulfillmentChannel,
+        CAST(JSON_EXTRACT_SCALAR(lop, "$.LandedPrice.Amount") AS FLOAT64) AS LandedPriceAmount,
+        JSON_EXTRACT_SCALAR(lop, "$.LandedPrice.CurrencyCode") AS LandedPriceCurrencyCode,
+        CAST(JSON_EXTRACT_SCALAR(lop, "$.ListingPrice.Amount") AS FLOAT64) AS LowestPricesListingPriceAmount,
+        JSON_EXTRACT_SCALAR(lop, "$.ListingPrice.CurrencyCode") AS LowestPricesListingCurrencyCode,
+        CAST(JSON_EXTRACT_SCALAR(lop, "$.Shipping.Amount") AS FLOAT64) AS LowestPricesShippingPriceAmount,
+        JSON_EXTRACT_SCALAR(lop, "$.Shipping.CurrencyCode") AS LowestPricesShippingCurrencyCode,
+
+        JSON_EXTRACT_SCALAR(neo, "$.Condition") AS BuyBoxEligibleOffersCondition,
+        JSON_EXTRACT_SCALAR(neo, "$.FulfillmentChannel") AS BuyBoxEligibleOffersFulfillmentChannel,
+        JSON_EXTRACT_SCALAR(neo, "$.OfferCount") AS BuyBoxEligibleOffersCount,
+
+        JSON_EXTRACT_SCALAR(noo, "$.Condition") AS NumberOfOffersCondition,
+        JSON_EXTRACT_SCALAR(noo, "$.FulfillmentChannel") AS NumberOfOffersFulfillmentChannel,
+        JSON_EXTRACT_SCALAR(noo, "$.OfferCount") AS NumberOfOffersCount,
+
+        JSON_EXTRACT_SCALAR(sr, "$.ProductCategoryId") AS SalesRankingsProductCategoryId,
+        CAST(JSON_EXTRACT_SCALAR(sr, "$.Rank") AS INT64) AS SalesRankingsRank,
+
+        CAST(JSON_EXTRACT_SCALAR(lp, "$.Amount") AS FLOAT64) AS ListPriceAmount,
+        JSON_EXTRACT_SCALAR(lp, "$.CurrencyCode") AS ListPriceCurrencyCode
+
+    FROM
+        flatten_payload,
+        UNNEST(offers) AS offer,
+        UNNEST(bbp) AS bbp,
+        UNNEST(lop) AS lop,
+        UNNEST(neo) AS neo,
+        UNNEST(noo) AS noo,
+        UNNEST(sr) AS sr
+)
+
+SELECT *
+FROM flattened_payload;
+
+
+[0m17:51:25.090167 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-437212&j=bq:US:2abe0fd6-384e-4ae7-81f6-a1a1699d7743&page=queryresults
+[0m17:51:25.942604 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7D64FC20>]}
+[0m17:51:25.944036 [info ] [Thread-1 (]: 1 of 11 OK created sql view model wellbefore.dim_all_columns ................... [[32mCREATE VIEW (0 processed)[0m in 2.54s]
+[0m17:51:25.944600 [debug] [Thread-1 (]: Finished running node model.buy_box_gcp_1.dim_all_columns
+[0m17:51:25.945636 [debug] [Thread-1 (]: Began running node model.buy_box_gcp_1.src_buybox_offers
+[0m17:51:25.945636 [info ] [Thread-1 (]: 2 of 11 START sql table model wellbefore.src_buybox_offers ..................... [RUN]
+[0m17:51:25.946735 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.buy_box_gcp_1.dim_all_columns, now model.buy_box_gcp_1.src_buybox_offers)
+[0m17:51:25.946735 [debug] [Thread-1 (]: Began compiling node model.buy_box_gcp_1.src_buybox_offers
+[0m17:51:25.948744 [debug] [Thread-1 (]: Writing injected SQL for node "model.buy_box_gcp_1.src_buybox_offers"
+[0m17:51:25.949754 [debug] [Thread-1 (]: Began executing node model.buy_box_gcp_1.src_buybox_offers
+[0m17:51:25.957973 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:51:27.292814 [debug] [Thread-1 (]: Writing runtime sql for node "model.buy_box_gcp_1.src_buybox_offers"
+[0m17:51:27.292814 [debug] [Thread-1 (]: On model.buy_box_gcp_1.src_buybox_offers: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "buy_box_gcp_1", "target_name": "dev", "node_id": "model.buy_box_gcp_1.src_buybox_offers"} */
+
+  
+    
+
+    create or replace table `dbt-437212`.`wellbefore`.`src_buybox_offers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH source_data AS (
+    SELECT 
+        PARSE_JSON(data.message_body) AS raw_data,
+    FROM 
+        dbt-437212.wellbefore.BuyBox_raw_ds_first20_entries as data
+),
+flatten_data AS (
+    SELECT
+        JSON_EXTRACT_ARRAY(raw_data.Payload.AnyOfferChangedNotification.Summary.NumberOfOffers) AS numberOfOffers,
+        JSON_EXTRACT_ARRAY(raw_data.Payload.AnyOfferChangedNotification.Summary.NumberOfBuyBoxEligibleOffers) AS buyboxprices
+    FROM source_data
+),
+flatten_data_1 AS (
+    SELECT
+        JSON_VALUE(bop.Condition)AS EligibleOfferCondition,
+        JSON_VALUE(bop.FulfillmentChannel)AS EligibleFulFillmentChannel,
+        JSON_VALUE(bop.OfferCount)AS EligibleOfferCount,
+
+        JSON_VALUE(noo.Condition)AS NumberOfferCondition,
+        JSON_VALUE(noo.FulfillmentChannel)AS NumberFulFillmentChannel,
+        JSON_VALUE(noo.OfferCount)AS NumberOfferCount
+    FROM flatten_data,
+        UNNEST(buyboxprices) AS bop,
+        UNNEST(numberOfOffers) AS noo
+)
+
+SELECT * FROM flatten_data_1
+    );
+  
+[0m17:51:28.106135 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-437212&j=bq:US:ee81082f-d211-46c7-a98e-24a704e16049&page=queryresults
+[0m17:51:30.915407 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7E472C90>]}
+[0m17:51:30.915407 [info ] [Thread-1 (]: 2 of 11 OK created sql table model wellbefore.src_buybox_offers ................ [[32mCREATE TABLE (44.0 rows, 120.8 KiB processed)[0m in 4.97s]
+[0m17:51:30.915407 [debug] [Thread-1 (]: Finished running node model.buy_box_gcp_1.src_buybox_offers
+[0m17:51:30.915407 [debug] [Thread-1 (]: Began running node model.buy_box_gcp_1.src_notification_lowest_prices
+[0m17:51:30.915407 [info ] [Thread-1 (]: 3 of 11 START sql table model wellbefore.src_notification_lowest_prices ........ [RUN]
+[0m17:51:30.915407 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.buy_box_gcp_1.src_buybox_offers, now model.buy_box_gcp_1.src_notification_lowest_prices)
+[0m17:51:30.915407 [debug] [Thread-1 (]: Began compiling node model.buy_box_gcp_1.src_notification_lowest_prices
+[0m17:51:30.915407 [debug] [Thread-1 (]: Writing injected SQL for node "model.buy_box_gcp_1.src_notification_lowest_prices"
+[0m17:51:30.915407 [debug] [Thread-1 (]: Began executing node model.buy_box_gcp_1.src_notification_lowest_prices
+[0m17:51:30.915407 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:51:32.209686 [debug] [Thread-1 (]: Writing runtime sql for node "model.buy_box_gcp_1.src_notification_lowest_prices"
+[0m17:51:32.209686 [debug] [Thread-1 (]: On model.buy_box_gcp_1.src_notification_lowest_prices: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "buy_box_gcp_1", "target_name": "dev", "node_id": "model.buy_box_gcp_1.src_notification_lowest_prices"} */
+
+  
+    
+
+    create or replace table `dbt-437212`.`wellbefore`.`src_notification_lowest_prices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH source_data AS (
+    SELECT 
+        PARSE_JSON(data.message_body) AS raw_data,
+    FROM 
+        dbt-437212.wellbefore.BuyBox_raw_ds_first20_entries as data
+),
+flatten_data AS (
+    SELECT
+        JSON_VALUE(raw_data.NotificationMetadata.NotificationId) AS NotificationId,
+        JSON_EXTRACT_ARRAY(raw_data.Payload.AnyOfferChangedNotification.Summary.LowestPrices) AS lowestPrices
+    FROM source_data
+),
+flatten_data_1 AS (
+    SELECT
+        NotificationId,
+        JSON_VALUE(lp.Condition)AS Condition,
+        JSON_VALUE(lp.FulfillmentChannel)AS FulFillmentChannel,
+
+        JSON_VALUE(lp.LandedPrice.Amount)AS LandedPriceAmount,
+        JSON_VALUE(lp.LandedPrice.CurrencyCode)AS LandedPriceCurrencyCode,
+
+        JSON_VALUE(lp.ListingPrice.Amount)AS ListingPriceAmount,
+        JSON_VALUE(lp.ListingPrice.CurrencyCode)AS ListingPriceCurrencyCode,
+
+        JSON_VALUE(lp.Shipping.Amount)AS ShippingCost,
+    FROM flatten_data,
+        UNNEST(lowestPrices) AS lp
+)
+
+SELECT * FROM flatten_data_1
+    );
+  
+[0m17:51:32.939526 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-437212&j=bq:US:a2ad79fb-0b82-475c-8ece-87712d3e9f6f&page=queryresults
+[0m17:51:35.824485 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7F639D60>]}
+[0m17:51:35.824485 [info ] [Thread-1 (]: 3 of 11 OK created sql table model wellbefore.src_notification_lowest_prices ... [[32mCREATE TABLE (28.0 rows, 120.8 KiB processed)[0m in 4.91s]
+[0m17:51:35.824485 [debug] [Thread-1 (]: Finished running node model.buy_box_gcp_1.src_notification_lowest_prices
+[0m17:51:35.824485 [debug] [Thread-1 (]: Began running node model.buy_box_gcp_1.src_notification_summary
+[0m17:51:35.824485 [info ] [Thread-1 (]: 4 of 11 START sql table model wellbefore.src_notification_summary .............. [RUN]
+[0m17:51:35.824485 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.buy_box_gcp_1.src_notification_lowest_prices, now model.buy_box_gcp_1.src_notification_summary)
+[0m17:51:35.824485 [debug] [Thread-1 (]: Began compiling node model.buy_box_gcp_1.src_notification_summary
+[0m17:51:35.824485 [debug] [Thread-1 (]: Writing injected SQL for node "model.buy_box_gcp_1.src_notification_summary"
+[0m17:51:35.824485 [debug] [Thread-1 (]: Began executing node model.buy_box_gcp_1.src_notification_summary
+[0m17:51:35.824485 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:51:37.175100 [debug] [Thread-1 (]: Writing runtime sql for node "model.buy_box_gcp_1.src_notification_summary"
+[0m17:51:37.178115 [debug] [Thread-1 (]: On model.buy_box_gcp_1.src_notification_summary: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "buy_box_gcp_1", "target_name": "dev", "node_id": "model.buy_box_gcp_1.src_notification_summary"} */
+
+  
+    
+
+    create or replace table `dbt-437212`.`wellbefore`.`src_notification_summary`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH source_data AS (
+    SELECT 
+        PARSE_JSON(data.message_body) AS raw_data,
+    FROM 
+        dbt-437212.wellbefore.BuyBox_raw_ds_first20_entries as data
+),
+flatten_data AS (
+    SELECT
+        JSON_VALUE(raw_data.NotificationMetadata.NotificationId) AS NotificationId,
+        JSON_VALUE(raw_data.Payload.AnyOfferChangedNotification.Summary.ListPrice.Amount) AS ListPriceAmount,
+        JSON_EXTRACT_ARRAY(raw_data.Payload.AnyOfferChangedNotification.Summary.BuyBoxPrices) AS buyboxprice
+
+    FROM source_data
+),
+flatten_data_1 AS (
+    SELECT
+        NotificationId,
+        JSON_VALUE(bp.LandedPrice.Amount)AS LandedPriceAmount,
+        JSON_VALUE(bp.LandedPrice.CurrencyCode)AS LandedPriceCurrencyCode,
+
+        JSON_VALUE(bp.ListingPrice.Amount)AS ListingPriceAmount,
+        JSON_VALUE(bp.ListingPrice.CurrencyCode)AS ListingPriceCurrencyCode,
+        
+        JSON_VALUE(bp.Shipping.Amount)AS ShippingCost,
+        JSON_VALUE(bp.Shipping.CurrencyCode)AS ShippingCurrencyCode,
+
+        ListPriceAmount
+        
+    FROM flatten_data,
+        UNNEST(buyboxprice) AS bp
+)
+
+SELECT * FROM flatten_data_1
+    );
+  
+[0m17:51:37.940384 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-437212&j=bq:US:fc30b6d2-f2f6-4824-a40c-5386fa4ed7db&page=queryresults
+[0m17:51:40.948246 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7F6521E0>]}
+[0m17:51:40.948246 [info ] [Thread-1 (]: 4 of 11 OK created sql table model wellbefore.src_notification_summary ......... [[32mCREATE TABLE (20.0 rows, 120.8 KiB processed)[0m in 5.12s]
+[0m17:51:40.948246 [debug] [Thread-1 (]: Finished running node model.buy_box_gcp_1.src_notification_summary
+[0m17:51:40.948246 [debug] [Thread-1 (]: Began running node model.buy_box_gcp_1.src_notifications
+[0m17:51:40.948246 [info ] [Thread-1 (]: 5 of 11 START sql table model wellbefore.src_notifications ..................... [RUN]
+[0m17:51:40.948246 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.buy_box_gcp_1.src_notification_summary, now model.buy_box_gcp_1.src_notifications)
+[0m17:51:40.948246 [debug] [Thread-1 (]: Began compiling node model.buy_box_gcp_1.src_notifications
+[0m17:51:40.948246 [debug] [Thread-1 (]: Writing injected SQL for node "model.buy_box_gcp_1.src_notifications"
+[0m17:51:40.963885 [debug] [Thread-1 (]: Began executing node model.buy_box_gcp_1.src_notifications
+[0m17:51:40.966502 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:51:42.242430 [debug] [Thread-1 (]: Writing runtime sql for node "model.buy_box_gcp_1.src_notifications"
+[0m17:51:42.259390 [debug] [Thread-1 (]: On model.buy_box_gcp_1.src_notifications: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "buy_box_gcp_1", "target_name": "dev", "node_id": "model.buy_box_gcp_1.src_notifications"} */
+
+  
+    
+
+    create or replace table `dbt-437212`.`wellbefore`.`src_notifications`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH source_data AS (
+    SELECT 
+        PARSE_JSON(data.message_body) AS raw_data,
+        PARSE_JSON(data.message_body).Payload AS offer
+    FROM 
+        dbt-437212.wellbefore.BuyBox_raw_ds_first20_entries as data
+),
+flatten_data AS (
+    SELECT
+        JSON_VALUE(offer.AnyOfferChangedNotification.OfferChangeTrigger.ASIN)AS ASIN,
+        JSON_VALUE(raw_data.NotificationMetadata.ApplicationId) AS ApplicationId,
+        JSON_VALUE(raw_data.NotificationMetadata.SubscriptionId) AS SubscriptionId,
+        JSON_VALUE(raw_data.NotificationMetadata.NotificationId) AS NotificationId,
+        JSON_VALUE(raw_data.NotificationType) AS NotificationType,
+        JSON_VALUE(raw_data.NotificationVersion) AS NotificationVersion,
+        JSON_VALUE(raw_data.NotificationMetadata.PublishTime) AS PublishTime,
+FROM source_data
+)
+
+SELECT * FROM flatten_data
+    );
+  
+[0m17:51:42.956420 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-437212&j=bq:US:5aed77d2-944e-4741-a1c8-ab74673b384d&page=queryresults
+[0m17:51:45.717745 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7F673A70>]}
+[0m17:51:45.717745 [info ] [Thread-1 (]: 5 of 11 OK created sql table model wellbefore.src_notifications ................ [[32mCREATE TABLE (20.0 rows, 120.8 KiB processed)[0m in 4.77s]
+[0m17:51:45.717745 [debug] [Thread-1 (]: Finished running node model.buy_box_gcp_1.src_notifications
+[0m17:51:45.717745 [debug] [Thread-1 (]: Began running node model.buy_box_gcp_1.src_offer_change_trigger
+[0m17:51:45.717745 [info ] [Thread-1 (]: 6 of 11 START sql table model wellbefore.src_offer_change_trigger .............. [RUN]
+[0m17:51:45.717745 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.buy_box_gcp_1.src_notifications, now model.buy_box_gcp_1.src_offer_change_trigger)
+[0m17:51:45.717745 [debug] [Thread-1 (]: Began compiling node model.buy_box_gcp_1.src_offer_change_trigger
+[0m17:51:45.737464 [debug] [Thread-1 (]: Writing injected SQL for node "model.buy_box_gcp_1.src_offer_change_trigger"
+[0m17:51:45.741035 [debug] [Thread-1 (]: Began executing node model.buy_box_gcp_1.src_offer_change_trigger
+[0m17:51:45.742005 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:51:47.043269 [debug] [Thread-1 (]: Writing runtime sql for node "model.buy_box_gcp_1.src_offer_change_trigger"
+[0m17:51:47.056560 [debug] [Thread-1 (]: On model.buy_box_gcp_1.src_offer_change_trigger: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "buy_box_gcp_1", "target_name": "dev", "node_id": "model.buy_box_gcp_1.src_offer_change_trigger"} */
+
+  
+    
+
+    create or replace table `dbt-437212`.`wellbefore`.`src_offer_change_trigger`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH source_data AS (
+    SELECT
+        PARSE_JSON(data.message_body) AS raw_data,
+        PARSE_JSON(data.message_body).Payload AS offer
+    FROM dbt-437212.wellbefore.BuyBox_raw_ds_first20_entries as data
+),
+flatten_data AS (
+    SELECT
+        JSON_VALUE(offer.AnyOfferChangedNotification.OfferChangeTrigger.ASIN)AS ASIN,
+        JSON_VALUE(offer.AnyOfferChangedNotification.OfferChangeTrigger.ItemCondition)AS ItemCondition,
+        JSON_VALUE(raw_data.NotificationMetadata.PublishTime) AS PublishTime,
+    FROM source_data
+)
+ 
+SELECT * FROM flatten_data
+    );
+  
+[0m17:51:47.756323 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-437212&j=bq:US:757a3b5e-e16e-4868-b7bd-8bba0beb2a91&page=queryresults
+[0m17:51:50.269866 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7F6710D0>]}
+[0m17:51:50.270984 [info ] [Thread-1 (]: 6 of 11 OK created sql table model wellbefore.src_offer_change_trigger ......... [[32mCREATE TABLE (20.0 rows, 120.8 KiB processed)[0m in 4.55s]
+[0m17:51:50.272031 [debug] [Thread-1 (]: Finished running node model.buy_box_gcp_1.src_offer_change_trigger
+[0m17:51:50.272031 [debug] [Thread-1 (]: Began running node model.buy_box_gcp_1.src_offers
+[0m17:51:50.272031 [info ] [Thread-1 (]: 7 of 11 START sql table model wellbefore.src_offers ............................ [RUN]
+[0m17:51:50.273150 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.buy_box_gcp_1.src_offer_change_trigger, now model.buy_box_gcp_1.src_offers)
+[0m17:51:50.273150 [debug] [Thread-1 (]: Began compiling node model.buy_box_gcp_1.src_offers
+[0m17:51:50.275407 [debug] [Thread-1 (]: Writing injected SQL for node "model.buy_box_gcp_1.src_offers"
+[0m17:51:50.276426 [debug] [Thread-1 (]: Began executing node model.buy_box_gcp_1.src_offers
+[0m17:51:50.277467 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:51:51.497810 [debug] [Thread-1 (]: Writing runtime sql for node "model.buy_box_gcp_1.src_offers"
+[0m17:51:51.497810 [debug] [Thread-1 (]: On model.buy_box_gcp_1.src_offers: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "buy_box_gcp_1", "target_name": "dev", "node_id": "model.buy_box_gcp_1.src_offers"} */
+
+  
+    
+
+    create or replace table `dbt-437212`.`wellbefore`.`src_offers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH source_data AS (
+    SELECT 
+        PARSE_JSON(data.message_body) AS raw_data
+    FROM 
+        dbt-437212.wellbefore.BuyBox_raw_ds_first20_entries AS data
+),
+flatten_data AS (
+    SELECT
+        JSON_VALUE(raw_data, "$.NotificationMetadata.NotificationId") AS NotificationId,
+        JSON_VALUE(raw_data, "$.AnyOfferChangedNotification.OfferChangeTrigger.ASIN") AS ASIN,
+        JSON_EXTRACT_ARRAY(raw_data, "$.Payload.AnyOfferChangedNotification.Offers") AS offer
+    FROM source_data
+),
+flatten_data_1 AS (
+    SELECT
+        NotificationId,
+        ROW_NUMBER() OVER (PARTITION BY ASIN ORDER BY NotificationId DESC) AS OfferID,
+        ASIN,
+        JSON_VALUE(offer, "$.SellerId") AS SellerId,
+        JSON_VALUE(offer, "$.IsBuyBoxWinner") AS IsBuyBoxWinner,
+        JSON_VALUE(offer, "$.ListingPrice.Amount") AS ListingPriceAmount,
+        JSON_VALUE(offer, "$.ListingPrice.CurrencyCode") AS ListingPriceCurrencyCode,
+        JSON_VALUE(offer, "$.PrimeInformation.IsOfferNationalPrime") AS IsOfferNationalPrime,
+        JSON_VALUE(offer, "$.PrimeInformation.IsOfferPrime") AS PrimeInformation
+    FROM flatten_data,
+    UNNEST(offer) AS offer
+)
+
+SELECT * 
+FROM flatten_data_1
+    );
+  
+[0m17:51:52.164110 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-437212&j=bq:US:fad6546e-5be5-49f1-904c-48f01ae5b584&page=queryresults
+[0m17:51:55.251520 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7F63B0B0>]}
+[0m17:51:55.251520 [info ] [Thread-1 (]: 7 of 11 OK created sql table model wellbefore.src_offers ....................... [[32mCREATE TABLE (172.0 rows, 120.8 KiB processed)[0m in 4.98s]
+[0m17:51:55.251520 [debug] [Thread-1 (]: Finished running node model.buy_box_gcp_1.src_offers
+[0m17:51:55.251520 [debug] [Thread-1 (]: Began running node model.buy_box_gcp_1.src_products
+[0m17:51:55.251520 [info ] [Thread-1 (]: 8 of 11 START sql table model wellbefore.src_products .......................... [RUN]
+[0m17:51:55.251520 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.buy_box_gcp_1.src_offers, now model.buy_box_gcp_1.src_products)
+[0m17:51:55.251520 [debug] [Thread-1 (]: Began compiling node model.buy_box_gcp_1.src_products
+[0m17:51:55.251520 [debug] [Thread-1 (]: Writing injected SQL for node "model.buy_box_gcp_1.src_products"
+[0m17:51:55.267422 [debug] [Thread-1 (]: Began executing node model.buy_box_gcp_1.src_products
+[0m17:51:55.269997 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:51:57.150774 [debug] [Thread-1 (]: Writing runtime sql for node "model.buy_box_gcp_1.src_products"
+[0m17:51:57.150774 [debug] [Thread-1 (]: On model.buy_box_gcp_1.src_products: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "buy_box_gcp_1", "target_name": "dev", "node_id": "model.buy_box_gcp_1.src_products"} */
+
+  
+    
+
+    create or replace table `dbt-437212`.`wellbefore`.`src_products`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH source_data AS (
+    SELECT 
+        PARSE_JSON(data.message_body) AS raw_data,
+    FROM 
+        dbt-437212.wellbefore.BuyBox_raw_ds_first20_entries as data
+),
+flatten_data AS (
+    SELECT
+        JSON_VALUE(raw_data.Payload.AnyOfferChangedNotification.OfferChangeTrigger.ASIN)AS ASIN,
+        JSON_VALUE(raw_data.Payload.AnyOfferChangedNotification.OfferChangeTrigger.MarketplaceId)AS MarketplaceId
+    FROM source_data
+)
+SELECT * FROM flatten_data
+    );
+  
+[0m17:51:57.854276 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-437212&j=bq:US:16573b35-9151-4c79-a231-080231742384&page=queryresults
+[0m17:52:01.181039 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7F5C4650>]}
+[0m17:52:01.181039 [info ] [Thread-1 (]: 8 of 11 OK created sql table model wellbefore.src_products ..................... [[32mCREATE TABLE (20.0 rows, 120.8 KiB processed)[0m in 5.93s]
+[0m17:52:01.181039 [debug] [Thread-1 (]: Finished running node model.buy_box_gcp_1.src_products
+[0m17:52:01.181039 [debug] [Thread-1 (]: Began running node model.buy_box_gcp_1.src_sales_ranking
+[0m17:52:01.181039 [info ] [Thread-1 (]: 9 of 11 START sql table model wellbefore.src_sales_ranking ..................... [RUN]
+[0m17:52:01.181039 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.buy_box_gcp_1.src_products, now model.buy_box_gcp_1.src_sales_ranking)
+[0m17:52:01.181039 [debug] [Thread-1 (]: Began compiling node model.buy_box_gcp_1.src_sales_ranking
+[0m17:52:01.181039 [debug] [Thread-1 (]: Writing injected SQL for node "model.buy_box_gcp_1.src_sales_ranking"
+[0m17:52:01.181039 [debug] [Thread-1 (]: Began executing node model.buy_box_gcp_1.src_sales_ranking
+[0m17:52:01.197788 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:52:02.548813 [debug] [Thread-1 (]: Writing runtime sql for node "model.buy_box_gcp_1.src_sales_ranking"
+[0m17:52:02.550718 [debug] [Thread-1 (]: On model.buy_box_gcp_1.src_sales_ranking: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "buy_box_gcp_1", "target_name": "dev", "node_id": "model.buy_box_gcp_1.src_sales_ranking"} */
+
+  
+    
+
+    create or replace table `dbt-437212`.`wellbefore`.`src_sales_ranking`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH source_data AS (
+    SELECT 
+      JSON_EXTRACT(data.message_body, '$.Payload.AnyOfferChangedNotification.Summary') AS raw_data,
+      PARSE_JSON(data.message_body) as parse_data
+    FROM dbt-437212.wellbefore.BuyBox_raw_ds_first20_entries as data
+),
+flatten_payload AS (
+    SELECT 
+        JSON_VALUE(parse_data.Payload.AnyOfferChangedNotification.OfferChangeTrigger.ASIN) AS ASIN,
+        JSON_EXTRACT_ARRAY(raw_data, '$.SalesRankings') AS SalesRankings
+    FROM source_data
+),
+flatten_offers AS (
+    SELECT 
+        GENERATE_UUID() as SurrogateKey,
+        ASIN,
+        JSON_EXTRACT(sr, '$.ProductCategoryId') AS ProductCategoryId,
+        JSON_EXTRACT(sr, '$.Rank') AS Ranking
+    FROM flatten_payload, UNNEST(SalesRankings) AS sr 
+)
+SELECT * FROM flatten_offers
+    );
+  
+[0m17:52:03.280582 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-437212&j=bq:US:1827ea4c-ce06-42a6-9c8f-d0c992599560&page=queryresults
+[0m17:52:06.066446 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7F651190>]}
+[0m17:52:06.067512 [info ] [Thread-1 (]: 9 of 11 OK created sql table model wellbefore.src_sales_ranking ................ [[32mCREATE TABLE (43.0 rows, 120.8 KiB processed)[0m in 4.89s]
+[0m17:52:06.068565 [debug] [Thread-1 (]: Finished running node model.buy_box_gcp_1.src_sales_ranking
+[0m17:52:06.069098 [debug] [Thread-1 (]: Began running node model.buy_box_gcp_1.src_sellers
+[0m17:52:06.069635 [info ] [Thread-1 (]: 10 of 11 START sql table model wellbefore.src_sellers .......................... [RUN]
+[0m17:52:06.070673 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.buy_box_gcp_1.src_sales_ranking, now model.buy_box_gcp_1.src_sellers)
+[0m17:52:06.071190 [debug] [Thread-1 (]: Began compiling node model.buy_box_gcp_1.src_sellers
+[0m17:52:06.073417 [debug] [Thread-1 (]: Writing injected SQL for node "model.buy_box_gcp_1.src_sellers"
+[0m17:52:06.075041 [debug] [Thread-1 (]: Began executing node model.buy_box_gcp_1.src_sellers
+[0m17:52:06.077239 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:52:07.341682 [debug] [Thread-1 (]: Writing runtime sql for node "model.buy_box_gcp_1.src_sellers"
+[0m17:52:07.341682 [debug] [Thread-1 (]: On model.buy_box_gcp_1.src_sellers: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "buy_box_gcp_1", "target_name": "dev", "node_id": "model.buy_box_gcp_1.src_sellers"} */
+
+  
+    
+
+    create or replace table `dbt-437212`.`wellbefore`.`src_sellers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- WITH source_data AS (
+--     SELECT 
+--         PARSE_JSON(data.message_body) AS raw_data,
+--     FROM 
+--         dbt-437212.wellbefore.BuyBox_raw_ds_first20_entries as data
+-- ),
+-- flatten_data AS (
+--     SELECT
+--         JSON_VALUE(raw_data.EventTime) AS EventTime,
+--         JSON_EXTRACT_ARRAY(raw_data.Payload.AnyOfferChangedNotification.Offers) AS offers
+--     FROM source_data
+-- )
+-- SELECT
+--     EventTime,
+--     JSON_VALUE(offers.SellerId) AS SellerId,
+--     JSON_VALUE(offers.IsFeaturedMerchant) AS IsFeaturedMerchant,
+--     JSON_VALUE(offers.SellerId) AS IsFulfilledByAmazon
+-- FROM
+--     flatten_data, UNNEST(offers) AS offers
+
+WITH source_data AS (
+    SELECT 
+        PARSE_JSON(data.message_body) AS raw_data
+    FROM 
+        `dbt-437212.wellbefore.BuyBox_raw_ds_first20_entries` AS data
+),
+flatten_data AS (
+    SELECT
+        JSON_VALUE(raw_data, "$.EventTime") AS EventTime,
+        JSON_EXTRACT_ARRAY(raw_data, "$.Payload.AnyOfferChangedNotification.Offers") AS offers
+    FROM source_data
+),
+flattened_offers AS (
+    SELECT 
+        EventTime,
+        JSON_VALUE(offer, "$.SellerId") AS SellerId,
+        JSON_VALUE(offer, "$.IsFeaturedMerchant") AS IsFeaturedMerchant,
+        JSON_VALUE(offer, "$.IsFulfilledByAmazon") AS IsFulfilledByAmazon
+    FROM 
+        flatten_data,
+        UNNEST(offers) AS offer
+)
+SELECT * 
+FROM flattened_offers
+    );
+  
+[0m17:52:08.048293 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-437212&j=bq:US:cbe146ec-7f58-4549-a24f-8b79b13cfec3&page=queryresults
+[0m17:52:10.846287 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7F65CCE0>]}
+[0m17:52:10.846287 [info ] [Thread-1 (]: 10 of 11 OK created sql table model wellbefore.src_sellers ..................... [[32mCREATE TABLE (172.0 rows, 120.8 KiB processed)[0m in 4.78s]
+[0m17:52:10.846287 [debug] [Thread-1 (]: Finished running node model.buy_box_gcp_1.src_sellers
+[0m17:52:10.846287 [debug] [Thread-1 (]: Began running node model.buy_box_gcp_1.src_shipping
+[0m17:52:10.846287 [info ] [Thread-1 (]: 11 of 11 START sql table model wellbefore.src_shipping ......................... [RUN]
+[0m17:52:10.855395 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.buy_box_gcp_1.src_sellers, now model.buy_box_gcp_1.src_shipping)
+[0m17:52:10.855395 [debug] [Thread-1 (]: Began compiling node model.buy_box_gcp_1.src_shipping
+[0m17:52:10.855395 [debug] [Thread-1 (]: Writing injected SQL for node "model.buy_box_gcp_1.src_shipping"
+[0m17:52:10.855395 [debug] [Thread-1 (]: Began executing node model.buy_box_gcp_1.src_shipping
+[0m17:52:10.855395 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:52:12.197516 [debug] [Thread-1 (]: Writing runtime sql for node "model.buy_box_gcp_1.src_shipping"
+[0m17:52:12.197516 [debug] [Thread-1 (]: On model.buy_box_gcp_1.src_shipping: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "buy_box_gcp_1", "target_name": "dev", "node_id": "model.buy_box_gcp_1.src_shipping"} */
+
+  
+    
+
+    create or replace table `dbt-437212`.`wellbefore`.`src_shipping`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- WITH source_data AS (
+--     SELECT 
+--         PARSE_JSON(data.message_body) AS raw_data,
+--     FROM 
+--         dbt-437212.wellbefore.BuyBox_raw_ds_first20_entries as data
+-- ),
+-- flatten_data AS (
+--     SELECT
+--         JSON_VALUE(raw_data.NotificationMetadata.NotificationId) AS NotificationId,
+--         JSON_EXTRACT_ARRAY(raw_data.Payload.AnyOfferChangedNotification.Offers) AS offers
+--     FROM source_data
+-- )
+-- SELECT
+--     NotificationId,
+--     JSON_VALUE(offers.Shipping.Amount) AS ShippingAmount,
+--     JSON_VALUE(offers.Shipping.CurrencyCode) AS ShippingCurrencyCode,
+--     JSON_VALUE(offers.ShippingTime.AvailabilityType) AS ShippingAvailabilityType,
+--     JSON_VALUE(offers.ShippingTime.MaximumHours) AS ShippingMaximumHours,
+--     JSON_VALUE(offers.ShippingTime.MinimumHours) AS ShippingMinimumHours,
+--     JSON_VALUE(offers.ShipsDomestically) AS ShipsDomestically,
+-- FROM
+--     flatten_data, UNNEST(offers) AS offers
+
+WITH source_data AS (
+    SELECT 
+      JSON_EXTRACT(data.message_body, '$.Payload.AnyOfferChangedNotification') AS raw_data,
+      PARSE_JSON(data.message_body) as parse_data
+    FROM dbt-437212.wellbefore.BuyBox_raw_ds_first20_entries as data
+),
+flatten_payload AS (
+    SELECT 
+        JSON_VALUE(parse_data.NotificationMetadata.NotificationId) AS NotificationId,
+        JSON_EXTRACT_ARRAY(raw_data, '$.Offers') AS offers
+    FROM source_data
+),
+flatten_offers AS (
+    SELECT 
+        GENERATE_UUID() as SurrogateKey,
+        NotificationId,
+        JSON_EXTRACT(offer, '$.Shipping.Amount') AS ShippingAmount,
+        JSON_EXTRACT(offer, '$.Shipping.CurrencyCode') AS ShippingCurrencyCode,
+        JSON_EXTRACT(offer, '$.ShippingTime.AvailabilityType') AS AvailabilityType,
+        JSON_EXTRACT(offer, '$.ShippingTime.AvailableDate') AS AvailableDate,
+        JSON_EXTRACT(offer, '$.ShippingTime.MaximumHours') AS MaximumHours,
+        JSON_EXTRACT(offer, '$.ShippingTime.MinimumHours') AS MinimumHours,
+        JSON_EXTRACT(offer, '$.ShipsDomestically') AS ShipsDomestically
+
+    FROM flatten_payload, UNNEST(offers) AS offer 
+)
+SELECT * FROM flatten_offers
+    );
+  
+[0m17:52:12.877917 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-437212&j=bq:US:225b3ef8-ebaa-47bd-bc5a-10f3d6b2c6d0&page=queryresults
+[0m17:52:15.622312 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf2aa9d3-cc9a-44a0-a1e5-375cb1e79818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7F9FBE90>]}
+[0m17:52:15.623420 [info ] [Thread-1 (]: 11 of 11 OK created sql table model wellbefore.src_shipping .................... [[32mCREATE TABLE (172.0 rows, 120.8 KiB processed)[0m in 4.77s]
+[0m17:52:15.624612 [debug] [Thread-1 (]: Finished running node model.buy_box_gcp_1.src_shipping
+[0m17:52:15.626763 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:52:15.626763 [debug] [MainThread]: Connection 'list_dbt-437212' was properly closed.
+[0m17:52:15.626763 [debug] [MainThread]: Connection 'list_dbt-437212_wellbefore' was properly closed.
+[0m17:52:15.627764 [debug] [MainThread]: Connection 'model.buy_box_gcp_1.src_shipping' was properly closed.
+[0m17:52:15.628289 [info ] [MainThread]: 
+[0m17:52:15.628400 [info ] [MainThread]: Finished running 1 view model, 10 table models in 0 hours 0 minutes and 54.93 seconds (54.93s).
+[0m17:52:15.630454 [debug] [MainThread]: Command end result
+[0m17:52:15.660367 [info ] [MainThread]: 
+[0m17:52:15.660367 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:52:15.660367 [info ] [MainThread]: 
+[0m17:52:15.660367 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 TOTAL=11
+[0m17:52:15.666785 [debug] [MainThread]: Command `dbt run` succeeded at 17:52:15.666785 after 57.76 seconds
+[0m17:52:15.666785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E7D7F7F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E6AB5F4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E6AB5D730>]}
+[0m17:52:15.666785 [debug] [MainThread]: Flushing usage events
