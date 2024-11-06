@@ -6,7 +6,7 @@ WITH source_data AS (
 
     FROM
 
-        dbt-437212.wellbefore.BuyBox_raw_ds_first20_entries
+        dbt-437212.wellbefore.B00KJ75ISS_1_month
 
 ),
 
@@ -16,13 +16,27 @@ flatten_payload AS (
 
         JSON_EXTRACT_SCALAR(raw_data, "$.EventTime") AS EventTime,
 
+        JSON_EXTRACT_SCALAR(raw_data, "$.NotificationMetadata.ApplicationId") AS ApplicationId,
+
         JSON_EXTRACT_SCALAR(raw_data, "$.NotificationMetadata.NotificationId") AS NotificationId,
 
         TIMESTAMP(JSON_EXTRACT_SCALAR(raw_data, "$.NotificationMetadata.PublishTime")) AS PublishTime,
 
-        JSON_EXTRACT_ARRAY(raw_data, "$.Payload.AnyOfferChangedNotification.Offers") AS offers,
+        JSON_EXTRACT_SCALAR(raw_data, "$.NotificationMetadata.SubscriptionId") AS SubscriptionId,
+
+        JSON_EXTRACT_SCALAR(raw_data, "$.NotificationType") AS NotificationType,
+
+        JSON_EXTRACT_SCALAR(raw_data, "$.NotificationVersion") AS NotificationVersion,
 
         JSON_EXTRACT_SCALAR(raw_data, "$.Payload.AnyOfferChangedNotification.OfferChangeTrigger.ASIN") AS ASIN,
+
+        JSON_EXTRACT_SCALAR(raw_data, "$.Payload.AnyOfferChangedNotification.OfferChangeTrigger.ItemCondition") AS ItemCondition,
+
+        JSON_EXTRACT_SCALAR(raw_data, "$.Payload.AnyOfferChangedNotification.OfferChangeTrigger.MarketplaceId") AS MarketplaceId,
+
+        JSON_EXTRACT_SCALAR(raw_data, "$.Payload.AnyOfferChangedNotification.OfferChangeTrigger.OfferChangeType") AS OfferChangeType,
+
+        JSON_EXTRACT_SCALAR(raw_data, "$.Payload.AnyOfferChangedNotification.OfferChangeTrigger.TimeOfOfferChange") AS TimeOfOfferChange,
 
         JSON_EXTRACT_ARRAY(raw_data, "$.Payload.AnyOfferChangedNotification.Summary.BuyBoxPrices") AS bbp,
 
@@ -48,15 +62,29 @@ flattened_payload AS (
 
         EventTime,
 
+        ApplicationId,
+
         NotificationId,
 
         PublishTime,
 
+        SubscriptionId,
+
+        NotificationType,
+
+        NotificationVersion,
+
         ASIN,
 
-        JSON_EXTRACT_SCALAR(bbp, "$.Condition") AS BuyBoxPricesCondition,
+        ItemCondition,
 
-        JSON_EXTRACT_SCALAR(offer, "$.SellerId") AS SellerId,
+        MarketplaceId,
+
+        OfferChangeType,
+
+        TimeOfOfferChange,
+
+        JSON_EXTRACT_SCALAR(bbp, "$.Condition") AS BuyBoxPricesCondition,
 
         CAST(JSON_EXTRACT_SCALAR(bbp, "$.LandedPrice.Amount") AS FLOAT64) AS BuyBoxLandedPriceAmount,
 
@@ -110,8 +138,6 @@ flattened_payload AS (
 
         flatten_payload,
 
-        UNNEST(offers) AS offer,
-
         UNNEST(bbp) AS bbp,
 
         UNNEST(lop) AS lop,
@@ -126,4 +152,4 @@ flattened_payload AS (
 
 SELECT *
 
-FROM flattened_payload order by ASIN
+FROM flattened_payload
